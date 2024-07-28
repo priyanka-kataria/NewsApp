@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+   
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+    
+
+      <template id="productTemplate">
+        <div class="cards" id="cardvalue">
+            <article class="information">
+                <span class="categry"> </span>
+                <div class="imageContainer">
+                    <img class="productImg"/>
+                </div>
+                <h2 class="productName"></h2>
+                <div class="prodRating"></div>
+                <p class="description"></p>
+                <div class="priceElem">
+                    <p class="ProdAct"> </p>
+                    <p class="discount"></p>
+                </div>
+                <div class="prodStockAval">
+                    <p> Total product Available:</p>
+                    <p class="productStock"> </p>
+                </div>
+                <div class="ProductQuantityElem">
+                    <p> Quantity(pieces):
+                    </p>
+                    <div class="stockElement">
+                        <button class="cartIncrement">+</button>
+                        <p class="prodQuantity">1</p>
+                        <button class="cartDecrement">-</button>
+                    </div>
+                </div>
+                <button class="AddCart"> <p>Add to cart</p> <i class="fa-solid fa-cart-shopping"></i> </button>
+            </article>
+        </div>
+    </template>
+    </div>
+  </body>
+</html>
